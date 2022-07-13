@@ -27,46 +27,24 @@ echo $SHELL # 查看修改后的使用shell
 
 # 二、oh-my-zsh
 
-❤为了确保不被拒绝连接，设置hosts文件：
-
-```shell
-sudo nano /etc/hosts
-## 将下面的内容添加上去：
-# GitHub Start
-151.101.64.133 raw.githubusercontent.com
-# GitHub End
-```
-
-接下来安装oh-my-zsh及其插件：
+安装oh-my-zsh及其插件：
 
 ```shell
 # 安装oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://gitee.com/jhkdx/ohmyzsh/raw/master/tools/install.sh)"
 
 # 安装zsh-syntax-highlighting：提供命令高亮
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://gitee.com/j-jl/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # 安装autosuggestions：记住你之前使用过的命令
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://gitee.com/denhu/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # 安装autojump
 apt install autojump
 ```
-
-> 注意：如果GitHub被墙无法安装oh-my-zsh，可按如下方法安装：
->
-> - 进入网址：https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
->
-> - 复制全部内容
->
-> - ```shell
->   nano install.sh
->   # ctrl + v 粘贴脚本
->   # ctrl + s 保存文件
->   sh install.sh  # bash install.sh
->   ```
->
-> - 如上，安装完毕。
 
 安装主题powerlevel10k
 
@@ -125,6 +103,8 @@ p10k configure
 
 ```shell
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+git clone --depth=1 https://gitee.com/hex_ai/vimrc.git ~/.vim_runtime
+
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 
@@ -134,6 +114,8 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ```shell
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
+git clone https://gitee.com/longyorke/vimplus.git ~/.vimplus
+
 cd ~/.vimplus
 ./install.sh
 ```
