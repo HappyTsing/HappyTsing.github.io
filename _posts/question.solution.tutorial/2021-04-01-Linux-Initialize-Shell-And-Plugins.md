@@ -47,7 +47,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # 安装autosuggestions：记住你之前使用过的命令
-git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # 安装autojump
 apt install autojump
@@ -89,7 +89,7 @@ plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # 绑定~为接受建议，在文件末尾添加如下内容：
-bindkey '·' autosuggest-accept
+bindkey '`' autosuggest-accept
 ```
 
 使用如下脚本快速完成设置：
