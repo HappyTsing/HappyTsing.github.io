@@ -21,7 +21,7 @@ tags:
 
 Download the file to the directory：`~/Zotero/locate`
 
-![locate](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081621710.png)
+![locate](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/zotero_mn3_notion/202111081621710.png)
 
 # Configure engines.json
 
@@ -110,14 +110,14 @@ Look again at the file `engines.json`：
 
 So we just need to change the `callNumber` and `extra`field in Zotero：
 
-![Zotero](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081551724.png)
+![Zotero](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/zotero_mn3_notion/202111081551724.png)
 
 Click on the green arrow above info：
 
-![arrow](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081558429.png)
+![arrow](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/zotero_mn3_notion/202111081558429.png)
 
 View our final results：
 
-![result](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081600550.png)
+![result](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/zotero_mn3_notion/202111081600550.png)
 
 Congratulations and enjoy!

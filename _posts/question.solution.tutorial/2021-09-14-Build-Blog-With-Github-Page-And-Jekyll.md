@@ -75,7 +75,7 @@ Jekyll 官方网站还有很多的参数可以调，比如设置文章的链接�
 
 - 获取 Shortname：leqing-work
 
-  ![Shortname](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913201228.png)
+  ![Shortname](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913201228.png)
 
 - 配置\_config.yml
 
@@ -150,11 +150,11 @@ post.puts "header-style: text"
 
 第一句语句生成的 markdown，在上传后会有图片：
 
-![header-img](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913205400.png)
+![header-img](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913205400.png)
 
 第二句语句生成的 markdown，则不会：
 
-![header-style](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210914193439.png)
+![header-style](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210914193439.png)
 
 ## Github Page
 
@@ -185,7 +185,7 @@ post.puts "header-style: text"
 
 在[阿里云 DNS](https://dns.console.aliyun.com/?spm=5176.13329450.top-nav.dbutton.42024df5rpZ6We#/dns/setting/leqing.work)设置 DNS 信息，如下：
 
-![DNS](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913174516.png)
+![DNS](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913174516.png)
 
 在 `WlqFigureBed.github.io/CNAME`中输入如下内容：
 
@@ -208,7 +208,7 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 配置 Github Page：[Settings -> Pages](https://github.com/WlqFigureBed/WlqFigureBed.github.io/settings/pages)
 
-![Pages](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913211410.png)
+![Pages](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913211410.png)
 
 # 二、Rules For Files
 
@@ -283,11 +283,11 @@ img/webicon：
 
 #### WlqFigureBed.github.io/\_posts/2017-07-12-upgrading-eleme-to-pwa.md
 
-![2017-07-12-upgrading-eleme-to-pwa.md](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210914211120.png)
+![2017-07-12-upgrading-eleme-to-pwa.md](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210914211120.png)
 
 #### WlqFigureBed.github.io/\_includes/posts/2017-07-12-upgrading-eleme-to-pwa
 
-![posts/2017-07-12-upgrading-eleme-to-pwa](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913223305.png)
+![posts/2017-07-12-upgrading-eleme-to-pwa](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210913223305.png)
 
 注意：en.md 和 zh.md 两个都是单纯的 markdown 文件，且不需要：
 
@@ -304,7 +304,7 @@ subtitle:     "Upgrading Ele.me to Progressive Web App"
 
 #### Final Effects
 
-![中英文效果](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210913222916.png)
+![中英文效果](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913222916.png)
 
 # 四、References
 

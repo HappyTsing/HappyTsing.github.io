@@ -108,8 +108,8 @@ git pull origin <branch name>  # 拉取远程仓库 origin 的指定分支
 
 # References
 
-- [【Git One】老司机上路](https://leqing.work/2020/11/25/Git-Base/)
-- [【Git Two】分支那些事儿](https://leqing.work/2020/11/24/Git-Branch/)
+- [【Git One】老司机上路](https://blog.leqing.work/2020/11/25/Git-Base/)
+- [【Git Two】分支那些事儿](https://blog.leqing.work/2020/11/24/Git-Branch/)
 
 - [Github 新增 SSH 密钥到 GitHub 帐户](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 

@@ -91,11 +91,11 @@ gco master                  # 切换回 master 分支
 
 - `git merge test`
 
-  ![git merge test](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915204730.png)
+  ![git merge test](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915204730.png)
 
 - `git merge --no-ff test`
 
-  ![git merge --no-ff test](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915204845.png)
+  ![git merge --no-ff test](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915204845.png)
 
 综上可知：
 
@@ -112,13 +112,13 @@ gco master                  # 切换回 master 分支
 
 示例：此时的分支状态如图，开发任务分叉到两个不同分支，又各自提交了更新。
 
-![分叉的提交历史。](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915211055.png)
+![分叉的提交历史。](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915211055.png)
 
 **方案一：**
 
 使用：`git merge --no-ff experiment` （当前分支master），效果如图：
 
-![通过合并操作来整合分叉了的历史。](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915211058.png)
+![通过合并操作来整合分叉了的历史。](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915211058.png)
 
 **方案二：**
 
@@ -133,7 +133,7 @@ gco master                  # 切换回 master 分支
 
   它的原理是首先找到这两个分支（即当前分支 `experiment`、变基操作的目标基底分支 `master`） 的最近共同祖先 `C2`，然后对比当前分支相对于该祖先的历次提交，提取相应的修改并存为临时文件， 然后将当前分支指向目标基底 `C3`, 最后以此将之前另存为临时文件的修改依序应用。
 
-  ![将 `C4` 中的修改变基到 `C3` 上。](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915211103.png)
+  ![将 `C4` 中的修改变基到 `C3` 上。](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915211103.png)
 
 - 最后，回到 `master` 分支，进行一次快进合并。
 
@@ -142,7 +142,7 @@ gco master                  # 切换回 master 分支
   git merge experiment
   ```
 
-  ![`master` 分支的快进合并。](https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/20210915211107.png)
+  ![`master` 分支的快进合并。](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210915211107.png)
 
 参考：[Git Docs 分支 - 变基](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
 
@@ -150,6 +150,5 @@ gco master                  # 切换回 master 分支
 
 - [Git版本控制系列：使用git merge --no-ff合并分支](https://blog.csdn.net/wangqingchuan92/article/details/103137960)
 - [Git Docs 分支 - 变基](https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA)
-- [【Git One】老司机上路](https://leqing.work/2020/11/25/Git-Base/)
-- [【Git Three】浅析远程协作](https://leqing.work/2020/11/23/Git-Remote/)
-
+- [【Git One】老司机上路](https://blog.leqing.work/2020/11/25/Git-Base/)
+- [【Git Three】浅析远程协作](https://blog.leqing.work/2020/11/23/Git-Remote/)
