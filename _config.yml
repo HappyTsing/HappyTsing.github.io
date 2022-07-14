@@ -68,7 +68,7 @@ ba_track_id: 0ef6a02a593e0bcddc16f48386c9d8a5
 
 # Google Analytics
 ga_track_id: "G-VNST1JHHGZ" # Format: UA-xxxxxx-xx
-# ga_domain: leqing.work
+ga_domain: blog.leqing.work
 
 # Sidebar settings 右侧栏设置
 sidebar: true # whether or not using Sidebar.
@@ -116,3 +116,6 @@ page-mathjax: false
 #         href: "http://ingf.github.io/"
 #     }
 # ]
+
+# 我自己定义的变量
+github_repository_url: https://github.com/HappyTsing/HappyTsing.github.io
