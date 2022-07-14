@@ -5,7 +5,7 @@ header-img: img/home-bg/1.jpg
 email: wangleqing00@qq.com
 description: "这里是乐乐的个人博客，希望与你共同进步！"
 keyword: "乐乐博客, Happy Blog, 博客, 个人网站, 互联网, Java, 后端, 区块链"
-url: "https://happytsing.github.io" # your host, for absolute URL
+url: "https://blog.leqing.work/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 # Publish posts or collection documents with a future date.
 future: true
@@ -20,7 +20,6 @@ twitter_username: leqing666
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
 paginate: 10 # 一页放多少文章
@@ -65,11 +64,11 @@ netease_comment: false
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: [your track id]
+ba_track_id: 0ef6a02a593e0bcddc16f48386c9d8a5
 
 # Google Analytics
 ga_track_id: "G-VNST1JHHGZ" # Format: UA-xxxxxx-xx
-ga_domain: leqing.work
+# ga_domain: leqing.work
 
 # Sidebar settings 右侧栏设置
 sidebar: true # whether or not using Sidebar.

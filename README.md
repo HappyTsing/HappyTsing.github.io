@@ -1,6 +1,5 @@
-# [Happy Blog](https://leqing.work/)
+# [Happy Blog](https://blog.leqing.work/)
 
-fork from @[Github Hux Blog](https://github.com/WlqFigureBed/huxpro.github.io)
+fork from @[Github Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
-[手把手教你使用Github Page + Jekyll搭建博客！](https://leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
-
+[手把手教你使用 Github Page + Jekyll 搭建博客！](https://leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
