@@ -1,4 +1,4 @@
-# Site settings
+# Site settings 可用通过site.来访问这里的变量
 title: Happy Blog
 SEOTitle: 乐乐博客 | Happy Blog
 header-img: img/home-bg/1.jpg

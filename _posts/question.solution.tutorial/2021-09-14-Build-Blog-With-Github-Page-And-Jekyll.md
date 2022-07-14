@@ -52,7 +52,7 @@ bundle exec jekyll serve
 
 ```yml
 # Site settings
-url: "https://WlqFigureBed.github.io"
+url: "https://blog.leqing.work/"
 
 # SNS settings
 github_username: happytsing # 你的github账号
@@ -86,7 +86,7 @@ disqus_username: leqing-work
 
 #### Analytics settings
 
-网站分析，现在支持百度统计和 Google Analytics。需要去官方网站注册一下，然后将返回的 code 贴在下面：
+网站分析，现在支持[百度统计](https://tongji.baidu.com/)和 [Google Analytics](https://analytics.google.com/)。需要去官方网站注册一下，然后将返回的 code 贴在下面：
 
 ```yml
 # Baidu Analytics
@@ -94,7 +94,7 @@ ba_track_id: 0ef6a02a593e0bcddc16f48386c9d8a5
 
 # Google Analytics
 ga_track_id: "UA-49627206-1" # 你用Google账号去注册一个就会给你一个这样的id
-ga_domain: leqing.work # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
+ga_domain: blog.leqing.work # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto。
 ```
 
 #### Friends
