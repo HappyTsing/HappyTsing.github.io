@@ -1,18 +1,18 @@
 ---
-layout:     post
-title:      "【Git Three】浅析远程协作"
-subtitle:   "How To Use Git For Remote Collaboration"
-date:       2020-11-23 21:15:00
-author:     "HapppyTsing"
+layout: post
+title: "Git：浅析远程协作"
+subtitle: "How To Use Git For Remote Collaboration"
+date: 2020-11-23 21:15:00
+author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
   - Git
 ---
 
-> 本篇主要讲解Git本地和远程仓库交互协作。
+> 本篇主要讲解 Git 本地和远程仓库交互协作。
 
-# SSH秘钥
+# SSH 秘钥
 
 ```shell
 # 1. 查看是否存在秘钥，若存在，则跳过下面的步骤
@@ -25,11 +25,11 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 # 回车三次
 ```
 
-登录并设置Github [SSH keys](https://github.com/settings/keys)：
+登录并设置 Github [SSH keys](https://github.com/settings/keys)：
 
 ```shell
 cd ~/.ssh
-cat id_ed25519.pub  
+cat id_ed25519.pub
 # 复制，在Github设置中点击New SSH key，将公钥粘贴进去即可。
 ```
 
@@ -46,10 +46,10 @@ git remote remove origin                     # 删除 origin
 
 # git clone
 
-克隆一个git项目：
+克隆一个 git 项目：
 
 ```shell
-git clone git@github~.git 
+git clone git@github~.git
 ```
 
 # git push
@@ -59,10 +59,10 @@ git clone git@github~.git
 ```shell
 git push                       # 推送默认分支(当前分支)
 
-git push origin master         
+git push origin master
 # 推送指定分支 master 到远程仓库的 master 分支，相当于 git push origin master:master
 
-git push origin localbranch:remotebranch 
+git push origin localbranch:remotebranch
 # 推送指定分支 localbranch 到远程仓库的 remotebranch 分支,如果remotebranch不存在，则创建
 
 
@@ -75,8 +75,8 @@ git push origin --all          # 推送所有分支和tag
 
 **Params**
 
-- --tag：推送所有tag
-- --all：推送所有分支和tag
+- --tag：推送所有 tag
+- --all：推送所有分支和 tag
 - --force：强制推送，用本地分支覆盖远程分支
 - --delete：删除远程分支
 
@@ -84,9 +84,9 @@ git push origin --all          # 推送所有分支和tag
 
 # git fetch
 
-先说说一个命令：`git branch -r`，该命令显示所有远程分支。因为分布式的关系，这里的远程分支，其实是本地仓库中对应远程仓库分支的本地映射，并不是指实际服务器上的分支，是通过 git fetch 等来同步的。 
+先说说一个命令：`git branch -r`，该命令显示所有远程分支。因为分布式的关系，这里的远程分支，其实是本地仓库中对应远程仓库分支的本地映射，并不是指实际服务器上的分支，是通过 git fetch 等来同步的。
 
-因此，`git fetch`的作用就是拉取远程仓库中所有分支的更新，并同步到本地仓库中的远程分支，即origin/xxx。
+因此，`git fetch`的作用就是拉取远程仓库中所有分支的更新，并同步到本地仓库中的远程分支，即 origin/xxx。
 
 # git pull
 
@@ -94,9 +94,9 @@ git push origin --all          # 推送所有分支和tag
 
 - 复杂说：拉取默认远程仓库中与当前分支建立了同步流的分支（这个分支通常是和当前分支同名），并更新到当前分支。通常一个仓库只有一个远程仓库配置，别名叫做 origin。
 
-实际上，`git pull` 包含多个操作： 
+实际上，`git pull` 包含多个操作：
 
-1. `git fetch`：拉取远程仓库中所有分支的更新，并同步到本地仓库中的远程分支，即origin/xxxx 分支
+1. `git fetch`：拉取远程仓库中所有分支的更新，并同步到本地仓库中的远程分支，即 origin/xxxx 分支
 2. `git merge`：将与当前分支建立了更新流的远程分支合并（merge）到当前分支
 
 ```shell
@@ -112,4 +112,3 @@ git pull origin <branch name>  # 拉取远程仓库 origin 的指定分支
 - [【Git Two】分支那些事儿](https://blog.leqing.work/2020/11/24/Git-Branch/)
 
 - [Github 新增 SSH 密钥到 GitHub 帐户](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
-

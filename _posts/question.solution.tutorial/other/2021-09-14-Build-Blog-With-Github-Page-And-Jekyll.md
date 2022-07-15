@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Github Page 和 Jekyll 构建博客"
+title: "博客：Github Page+Jekyll"
 subtitle: "Build Blog With Github Page And Jekyll"
 date: 2021-09-14 19:37:00
 author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
-  - Github Page
   - Jekyll
 ---
 
@@ -53,8 +52,8 @@ gem install bundler
 bundle install
 # 可能需要这个依赖：sudo apt install zlib1g-dev
 # 本地运行
-bundle exec jekyll serve
-# 无法启动时安装该依赖 
+bundle exec jekyll serve --trace
+# 无法启动时安装该依赖
 bundle add webrick
 ```
 
@@ -64,7 +63,7 @@ bundle add webrick
 
 ## 1.3 huxpro config
 
-###  1.3.1 \_config.yml
+### 1.3.1 \_config.yml
 
 你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
 
@@ -215,7 +214,7 @@ leqing.work
 
 此后 Github Page 会自动识别，Github Page × Jekyll 这章的图中可以看到`Custom domain`会自动识别为`leqing.work`。
 
-> Note：change 
+> Note：change
 >
 > - leqing.work -> blog.leqing.work
 > - wlqfiguredbed.github.io -> happytsing.github.io

@@ -1,15 +1,13 @@
 ---
-layout:     post
-title:      "Linux 初始化 Shell 和插件"
-subtitle:   "Linux Initialize Shell And Plugins"
-date:       2021-04-01 18:32:00
-author:     "HapppyTsing"
+layout: post
+title: "Linux 初始化 Shell 和插件"
+subtitle: "Linux Initialize Shell And Plugins Introduction"
+date: 2021-04-01 18:32:00
+author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
   - Linux
-
-
 ---
 
 # 一、zsh
@@ -27,7 +25,7 @@ echo $SHELL # 查看修改后的使用shell
 
 # 二、oh-my-zsh
 
-安装oh-my-zsh及其插件：
+安装 oh-my-zsh 及其插件：
 
 ```shell
 # 安装oh-my-zsh
@@ -46,11 +44,11 @@ git clone https://gitee.com/denhu/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my
 apt install autojump
 ```
 
-安装主题powerlevel10k
+安装主题 powerlevel10k
 
 ```shell
 # 安装字体：https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-sudo apt install git 
+sudo apt install git
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
@@ -73,9 +71,9 @@ bindkey '`' autosuggest-accept
 使用如下脚本快速完成设置：
 
 ```shell
-sed -i '/ZSH_THEME="/ c ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc 
-sed -i '/plugins=(git)/ c plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)' ~/.zshrc 
-sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc 
+sed -i '/ZSH_THEME="/ c ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
+sed -i '/plugins=(git)/ c plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)' ~/.zshrc
+sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc
 ```
 
 保存配置：
@@ -84,7 +82,7 @@ sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc
 source ~/.zshrc
 ```
 
-重启shell，此时会进入主题设置，按引导进行即可，如果设置后不满意：
+重启 shell，此时会进入主题设置，按引导进行即可，如果设置后不满意：
 
 ```shell
 # 重新配置主题
@@ -110,7 +108,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 **二、Vimplus**
 
-安装Vimplus——开箱即用的vim插件管理工具：
+安装 Vimplus——开箱即用的 vim 插件管理工具：
 
 ```shell
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
@@ -120,7 +118,7 @@ cd ~/.vimplus
 ./install.sh
 ```
 
-查看vim插件：
+查看 vim 插件：
 
 ```shell
 vim ~/.vimrc
@@ -130,7 +128,7 @@ Plug 'preservim/NERDTree'
 call plug#end()
 ```
 
-该vimplus插件默认安装了若干插件，如果安装失败：
+该 vimplus 插件默认安装了若干插件，如果安装失败：
 
 ```shell
 # 进入vim文本编辑器
@@ -148,13 +146,14 @@ vim
 
 # 四、others
 
-- [bat](https://github.com/sharkdp/bat)，该插件用于代替cat，高亮显示
-  - arch安装：`yay -S bat`or`sudo pacman -S bat` 
-  - debian安装：`sudo apt install bat`
+- [bat](https://github.com/sharkdp/bat)，该插件用于代替 cat，高亮显示
+
+  - arch 安装：`yay -S bat`or`sudo pacman -S bat`
+  - debian 安装：`sudo apt install bat`
 
 - thefuck
 
-- tig，更好用的gitlog
+- tig，更好用的 gitlog
 
 - ydict，翻译
 
@@ -165,17 +164,16 @@ vim
 - j 文件名，可以快速跳转到某个目录，而不需要输入这个目录的前序目录
 - d，可以查看已经去过的目录，然后输入对应数字进入对应目录
 - 出现提示时，输入~或者方向右键应用提示
-- 删除shell中的一行内容。首先ctrl+a移动到行首，再ctrl+k删除一行的内容
+- 删除 shell 中的一行内容。首先 ctrl+a 移动到行首，再 ctrl+k 删除一行的内容
 - r，重复上一条命令
-- code filename 命令，使用vscode打开某文件
-- .zshrc中配置了plugins=(sudo)后，连续按两下esc键即在命令前加上sudo
-- fuck，安装了thefuck后输入即可纠正错误
+- code filename 命令，使用 vscode 打开某文件
+- .zshrc 中配置了 plugins=(sudo)后，连续按两下 esc 键即在命令前加上 sudo
+- fuck，安装了 thefuck 后输入即可纠正错误
 
 # 六、Reference
 
 - [Github powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
-- [iterm2和zsh终端体验优化](https://bytedance.feishu.cn/docs/doccn6xXJnUTedx2roBjKAMX2Gf#)
-- [程序员内功系列-iTerm2与Zsh篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
+- [iterm2 和 zsh 终端体验优化](https://bytedance.feishu.cn/docs/doccn6xXJnUTedx2roBjKAMX2Gf#)
+- [程序员内功系列-iTerm2 与 Zsh 篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
 - [程序员内功系列-常用命令行工具推荐](https://xiaozhou.net/learn-the-command-line-tools-md-2018-10-11.html)
 - [oh my zsh 插件推荐](https://hufangyun.com/2017/zsh-plugin/)
-

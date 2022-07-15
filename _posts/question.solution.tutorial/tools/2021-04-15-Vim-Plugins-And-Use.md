@@ -1,19 +1,18 @@
 ---
-layout:     post
-title:      "Vim 插件和入门教程"
-subtitle:   "Vim Plugins And Use"
-date:       2021-04-15 15:22:00
-author:     "HapppyTsing"
+layout: post
+title: "Vim 插件和入门"
+subtitle: "Vim Plugins Install And Simple Tutorial"
+date: 2021-04-15 15:22:00
+author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
-  - Linux
   - Vim
 ---
 
 # 一、Install Vimplus
 
-❤为了确保不被拒绝连接，设置hosts文件：
+❤ 为了确保不被拒绝连接，设置 hosts 文件：
 
 ```shell
 sudo nano /etc/hosts
@@ -22,14 +21,16 @@ sudo nano /etc/hosts
 151.101.64.133 raw.githubusercontent.com
 # GitHub End
 ```
-安装vim：
+
+安装 vim：
+
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt install vim
 ```
 
-安装Vimplus——开箱即用的vim插件管理工具：
+安装 Vimplus——开箱即用的 vim 插件管理工具：
 
 ```shell
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
@@ -37,7 +38,7 @@ cd ~/.vimplus
 ./install.sh
 ```
 
-查看vim插件：
+查看 vim 插件：
 
 ```shell
 vim ~/.vimrc
@@ -47,7 +48,7 @@ Plug 'preservim/NERDTree'
 call plug#end()
 ```
 
-该vimplus插件默认安装了若干插件，如果安装失败：
+该 vimplus 插件默认安装了若干插件，如果安装失败：
 
 ```shell
 # 进入vim文本编辑器
@@ -65,7 +66,7 @@ vim
 
 # 二、Use Vim
 
-vim自带教程，命令行输入：vimtutor
+vim 自带教程，命令行输入：vimtutor
 
 **操作符：**
 
@@ -81,11 +82,11 @@ vim自带教程，命令行输入：vimtutor
 
 **删除粘贴：**
 
-- u撤销一次，U恢复到初始状态
+- u 撤销一次，U 恢复到初始状态
 
-- ctrl-R：redo，取消撤销dd
+- ctrl-R：redo，取消撤销 dd
 
-- dd删除一行后，光标移动到准备**置入的位置的上方**，使用p粘贴
+- dd 删除一行后，光标移动到准备**置入的位置的上方**，使用 p 粘贴
 
 **插入命令：**
 
@@ -93,23 +94,23 @@ vim自带教程，命令行输入：vimtutor
 - a，光标后方插入
 - o，光标上新开一行
 - O，光标下新开一行
-- cw/ce，或者c$等操作，都可以在删除一定的东西后进入插入状态
+- cw/ce，或者 c$等操作，都可以在删除一定的东西后进入插入状态
 
-**替换命令：替换完毕后会自动回到normal状态**
+**替换命令：替换完毕后会自动回到 normal 状态**
 
 - r，光标处替换一个字符
-- R，光标处开始替换，按esc退出替换
+- R，光标处开始替换，按 esc 退出替换
 
 **搜索命令**
 
-- /，正序查询，n下一个，N上一个
+- /，正序查询，n 下一个，N 上一个
 - ?，倒叙查询
 - 查询时忽略大小写：`:set ic`，ignore case，若要禁用忽略大小写：`:set noic`
 
 **配对命令**
 
 - 光标置于括号，%，匹配括号
-- 置于某个单词，*顺序查询相同单词，#倒叙查询
+- 置于某个单词，\*顺序查询相同单词，#倒叙查询
 
 **替换命令**
 
@@ -120,22 +121,22 @@ vim自带教程，命令行输入：vimtutor
 - `%s/old/new/g`，直接替换整个文件中的每个匹配串
 - `%s/old/new/gc`，会找到整个文件中的每个匹配串，并且对每个匹配串提示是否进行替换
 
-**在vim内执行外部命令**
+**在 vim 内执行外部命令**
 
-- 输入`:!`之后，再输入shell命令即可
+- 输入`:!`之后，再输入 shell 命令即可
 
 **打开、保存、另存为、退出**
 
 - `:e <path/to/file>` → 打开一个文件
 - `:w` → 存盘
 - `:saveas <path/to/file>` → 另存为 `<path/to/file>`
-- `:x`， `ZZ` 或 `:wq` → 保存并退出 (`:x` 表示仅在需要时保存，ZZ不需要输入冒号并回车)
+- `:x`， `ZZ` 或 `:wq` → 保存并退出 (`:x` 表示仅在需要时保存，ZZ 不需要输入冒号并回车)
 - `:q!` → 退出不保存 `:qa!` 强行退出所有的正在编辑的文件，就算别的文件有更改。
-- `:bn` 和 `:bp` → 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（陈皓注：我喜欢使用:n到下一个文件）
+- `:bn` 和 `:bp` → 你可以同时打开很多文件，使用这两个命令来切换下一个或上一个文件。（陈皓注：我喜欢使用:n 到下一个文件）
 
 **选择性保存**
 
-- v进入可视模式，使用hjkl选择所需内容，也可通过$、%、*/#、0等方式选择
+- v 进入可视模式，使用 hjkl 选择所需内容，也可通过$、%、\*/#、0 等方式选择
 - 选择完毕后按 : 字符。您将看到屏幕底部会出现 :'<,'> 。
 - 现在请输入 `w TEST`，其中 TEST 是一个未被使用的文件名。确认您看到了:`'<,'>w TEST` 之后按 <回车> 键。
 
@@ -147,10 +148,10 @@ vim自带教程，命令行输入：vimtutor
 
 **补全功能**
 
-- `CTRL-D`，输入:e后，按CTRL-D，会显示所有e开始的命令
+- `CTRL-D`，输入:e 后，按 CTRL-D，会显示所有 e 开始的命令
 - `tab`，只能补全命令
 
 # 三、References
 
-- [Vim练级攻略](https://coolshell.cn/articles/5426.html)
+- [Vim 练级攻略](https://coolshell.cn/articles/5426.html)
 - [Github Vimplus](https://github.com/chxuan/vimplus)
