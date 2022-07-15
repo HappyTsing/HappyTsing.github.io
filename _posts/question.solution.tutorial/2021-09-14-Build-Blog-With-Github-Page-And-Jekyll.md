@@ -28,6 +28,14 @@ jekyll --version
 gem list jekyll
 ```
 
+MacOS
+
+```shell
+sudo gem install jekyll
+```
+
+
+
 ## Install huxpro
 
 huxpro 是 Jekyll 的一款主题，我们无需自己重新配置，直接拿现成的就行，这个主题非常棒：[huxpro](https://github.com/Huxpro/huxpro.github.io)
