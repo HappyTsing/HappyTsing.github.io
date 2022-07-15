@@ -13,7 +13,7 @@ tags:
 
 # 一、Github Page + Jekyll = Blog
 
-## Install Jekyll（WSL2 Debian）
+## 1.1 Install Jekyll
 
 Windows10 上安装 WSL2 Debian，安装 Jekyll：[Jekyll Docs](http://jekyllcn.com/docs/installation/)
 
@@ -31,12 +31,18 @@ gem list jekyll
 MacOS
 
 ```shell
+# 依赖准备
+brew install chruby ruby-install
+ruby-install ruby
+echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+echo "chruby ruby-3.1.2" >> ~/.zshrc # run 'chruby' to see actual version
+# version should newer or 3.1.2
+ruby -v
 sudo gem install jekyll
 ```
 
-
-
-## Install huxpro
+## 1.2 Install and Run huxpro
 
 huxpro 是 Jekyll 的一款主题，我们无需自己重新配置，直接拿现成的就行，这个主题非常棒：[huxpro](https://github.com/Huxpro/huxpro.github.io)
 
@@ -48,11 +54,17 @@ bundle install
 # 可能需要这个依赖：sudo apt install zlib1g-dev
 # 本地运行
 bundle exec jekyll serve
+# 无法启动时安装该依赖 
+bundle add webrick
 ```
 
 > bundler：Ruby 开发的包管理，只需要一个 bundler install 命令，就可以下载 Gemfile 文件里的所有依赖，由于需要安装 Jekyll 的主题，主题用到了一些依赖需要用 bundler 安装！
 
-### Config \_config.yml
+启动后默认访问地址：http://127.0.0.1:4000/
+
+## 1.3 huxpro config
+
+###  1.3.1 \_config.yml
 
 你可以通用修改 `_config.yml`文件来轻松的开始搭建自己的博客:
 
@@ -120,7 +132,7 @@ friends:
   ]
 ```
 
-### Post Articles
+### 1.3.2 Post Articles
 
 要发表的文章一般以 markdown 的格式放在这里`_posts/`，你只要看看这篇模板里的文章你就立刻明白该如何设置。
 
@@ -164,11 +176,11 @@ post.puts "header-style: text"
 
 ![header-style](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210914193439.png)
 
-## Github Page
+## 1.4 Github Page
 
 详情可以查看[Github Page Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)。
 
-### Create Repository
+### 1.4.1 Create Repository
 
 **Steps：**
 
@@ -182,7 +194,7 @@ post.puts "header-style: text"
 - 如何绑定自己的域名？
 - 太丑，如何优化？：Jekyll
 
-### Bind Domain
+### 1.4.2 Bind Domain
 
 > 记得完成：申请域名 -> 域名备案 -> [公安备案](http://www.beian.gov.cn/portal/index.do)
 
@@ -203,7 +215,12 @@ leqing.work
 
 此后 Github Page 会自动识别，Github Page × Jekyll 这章的图中可以看到`Custom domain`会自动识别为`leqing.work`。
 
-### Github Page × Jekyll
+> Note：change 
+>
+> - leqing.work -> blog.leqing.work
+> - wlqfiguredbed.github.io -> happytsing.github.io
+
+### 1.4.3 Github Page × Jekyll
 
 将刚才的 Jekyll 主题的所有文件复制，粘贴到 Github Page 的仓库中即可！
 
@@ -222,7 +239,7 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 [Jekyll Docs structure](https://www.jekyll.com.cn/docs/structure/)
 
-## Article Location
+## 2.1 Article Location
 
 文章主要存储在三个地方：
 
@@ -231,13 +248,13 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 - \_includes/posts
 
-### \_posts
+**\_posts**
 
 存放真正发布的内容！
 
 其中的文章开头有一些特殊设置，详见[Post Articles](#Post Articles)
 
-### \_includes/about
+**\_includes/about**
 
 存放两个文件：
 
@@ -246,7 +263,7 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 是 about 页面的个人介绍信息
 
-### \_includes/posts
+**\_includes/posts**
 
 存放一系列文件夹，其中每个文件夹下存放两个文件：
 
@@ -264,7 +281,7 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 其中的完整的文件内容查看：[Available Both English And Chinese Versions](#Available Both English And Chinese Versions)。
 
-## Picture Location
+## 2.2 Picture Location
 
 img/archive-bg：archive.html
 
@@ -287,13 +304,13 @@ img/webicon：
 
 # 三、Special usage
 
-## Available Both English And Chinese Versions
+## 3.1 Available Both English And Chinese Versions
 
-#### WlqFigureBed.github.io/\_posts/2017-07-12-upgrading-eleme-to-pwa.md
+- **xxx.github.io/\_posts/2017-07-12-upgrading-eleme-to-pwa.md**
 
 ![2017-07-12-upgrading-eleme-to-pwa.md](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210914211120.png)
 
-#### WlqFigureBed.github.io/\_includes/posts/2017-07-12-upgrading-eleme-to-pwa
+- **xxx.github.io/\_includes/posts/2017-07-12-upgrading-eleme-to-pwa**
 
 ![posts/2017-07-12-upgrading-eleme-to-pwa](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/git/20210913223305.png)
 
@@ -310,11 +327,15 @@ subtitle:     "Upgrading Ele.me to Progressive Web App"
 
 诸如以上的内容是不需要的！直接输入内容即可！
 
-#### Final Effects
+- **Final Effects**
 
 ![中英文效果](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/jekyll_blog/20210913222916.png)
 
-# 四、References
+# 四、New Page：PLAN
+
+新增一个分页：
+
+# 五、References
 
 - [Github Hux Blog](https://github.com/WlqFigureBed/huxpro.github.io)
 - [Jekyll Docs](http://jekyllcn.com/docs/installation/)

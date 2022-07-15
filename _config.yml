@@ -116,6 +116,3 @@ page-mathjax: false
 #         href: "http://ingf.github.io/"
 #     }
 # ]
-
-# 我自己定义的变量
-github_repository_url: https://github.com/HappyTsing/HappyTsing.github.io
