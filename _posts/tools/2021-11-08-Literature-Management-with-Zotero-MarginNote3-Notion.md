@@ -1,9 +1,9 @@
 ---
-layout:     post
-title:      "文献管理：Zotero+MarginNote3+Notion"
-subtitle:   "Literature Management：Zotero+MarginNote3+Notion"
-date:       2021-11-08 16:30:00
-author:     "HapppyTsing"
+layout: post
+title: "文献管理：Zotero+MarginNote3+Notion"
+subtitle: "Literature Management：Zotero+MarginNote3+Notion"
+date: 2021-11-08 16:30:00
+author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
@@ -12,7 +12,7 @@ tags:
 
 # BackGround
 
-使用Zotero进行文献管理，MarginNote3阅读论文，Notion做笔记，但是三者各自独立，经过一番探索，发现可以使用Zotero作为中枢，连接MN3和Notion，实现跨平台的完美联动。
+使用 Zotero 进行文献管理，MarginNote3 阅读论文，Notion 做笔记，但是三者各自独立，经过一番探索，发现可以使用 Zotero 作为中枢，连接 MN3 和 Notion，实现跨平台的完美联动。
 
 # Download icons
 
@@ -34,40 +34,39 @@ Add as following
 
 ```json
 [
-
-	{
+  {
     // Do not change the original configuration, simply add below it
-	},
-	{
-		"_name": "Notion",
-		"_alias": "Notion",
-		"_description": "Notion",
-		"_icon": "file:///Users/happytsing/Zotero/locate/notion.ico",
-		"_hidden": false,
-		"_urlTemplate": "https://www.notion.so/{z:callNumber}",
-		"_urlParams": [],
-		"_urlNamespaces": {
-			"rft": "info:ofi/fmt:kev:mtx:journal",
-			"z": "http://www.zotero.org/namespaces/openSearch#",
-			"": "http://a9.com/-/spec/opensearch/1.1/"
-		},
-		"_iconSourceURI": "https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081503427.ico"
-	},
-		{
-		"_name": "MarginNote3",
-		"_alias": "MarginNote3",
-		"_description": "MarginNote3",
-		"_icon": "file:///Users/happytsing/Zotero/locate/marginnote.ico",
-		"_hidden": false,
-		"_urlTemplate": "marginnote3app://notebook/{z:extra}",
-		"_urlParams": [],
-		"_urlNamespaces": {
-			"rft": "info:ofi/fmt:kev:mtx:journal",
-			"z": "http://www.zotero.org/namespaces/openSearch#",
-			"": "http://a9.com/-/spec/opensearch/1.1/"
-		},
-		"_iconSourceURI": "https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081459879.ico"
-	}
+  },
+  {
+    "_name": "Notion",
+    "_alias": "Notion",
+    "_description": "Notion",
+    "_icon": "file:///Users/happytsing/Zotero/locate/notion.ico",
+    "_hidden": false,
+    "_urlTemplate": "https://www.notion.so/{z:callNumber}",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    },
+    "_iconSourceURI": "https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081503427.ico"
+  },
+  {
+    "_name": "MarginNote3",
+    "_alias": "MarginNote3",
+    "_description": "MarginNote3",
+    "_icon": "file:///Users/happytsing/Zotero/locate/marginnote.ico",
+    "_hidden": false,
+    "_urlTemplate": "marginnote3app://notebook/{z:extra}",
+    "_urlParams": [],
+    "_urlNamespaces": {
+      "rft": "info:ofi/fmt:kev:mtx:journal",
+      "z": "http://www.zotero.org/namespaces/openSearch#",
+      "": "http://a9.com/-/spec/opensearch/1.1/"
+    },
+    "_iconSourceURI": "https://github.com/WlqFigureBed/FigureBed-one/raw/master/img/202111081459879.ico"
+  }
 ]
 ```
 
@@ -121,3 +120,13 @@ View our final results：
 ![result](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/zotero_mn3_notion/202111081600550.png)
 
 Congratulations and enjoy!
+
+# config zotero
+
+> update 2022.07.16
+
+plugins：
+
+- [translators_CN](https://github.com/l0o0/translators_CN)：用于抓去中文学术网站的插件
+
+- [zotero-pdf-translate](https://github.com/windingwind/zotero-pdf-translate)：划词翻译

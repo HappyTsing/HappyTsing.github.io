@@ -10,12 +10,14 @@ tags:
   - Linux
 ---
 
+> 换源：[清华源](https://mirrors.tuna.tsinghua.edu.cn/help/ubuntu/)
+
 # 一、zsh
 
 ```shell
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install -y zsh
+sudo apt-get install -y zsh wget curl git autojump
 cat /etc/shells # 查看所有安装的shell
 chsh -s $(which zsh) #修改默认shell为zsh   或者输入chsh后回车，再输入/bin/zsh
 echo $SHELL # 查看修改后的使用shell
@@ -39,23 +41,19 @@ git clone https://gitee.com/j-jl/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh
 # 安装autosuggestions：记住你之前使用过的命令
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/denhu/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-# 安装autojump
-apt install autojump
 ```
 
 安装主题 powerlevel10k
 
 ```shell
 # 安装字体：https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-sudo apt install git
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 启动插件：
 
 ```shell
-nano ~/.zshrc
+vim ~/.zshrc
 ## 找到plugins=(git)，修改为：
 plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)
 # sudo是ohmyzsh自带的插件，功能是在你输入的命令的开头添加sudo ，方法是双击Esc
