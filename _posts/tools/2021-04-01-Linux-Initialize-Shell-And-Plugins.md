@@ -32,15 +32,15 @@ echo $SHELL # 查看修改后的使用shell
 ```shell
 # 安装oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-sh -c "$(curl -fsSL https://gitee.com/jhkdx/ohmyzsh/raw/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://gitee.com/forkhub-tsing/ohmyzsh/raw/master/tools/install.sh)"
 
 # 安装zsh-syntax-highlighting：提供命令高亮
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://gitee.com/j-jl/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://gitee.com/forkhub-tsing/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # 安装autosuggestions：记住你之前使用过的命令
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-git clone https://gitee.com/denhu/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://gitee.com/forkhub-tsing/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
 安装主题 powerlevel10k
@@ -99,7 +99,7 @@ p10k configure
 
 ```shell
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-git clone --depth=1 https://gitee.com/hex_ai/vimrc.git ~/.vim_runtime
+git clone --depth=1 https://gitee.com/forkhub-tsing/vimrc.git ~/.vim_runtime
 
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
@@ -110,7 +110,7 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 ```shell
 git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-git clone https://gitee.com/longyorke/vimplus.git ~/.vimplus
+git clone https://gitee.com/forkhub-tsing/vimplus.git ~/.vimplus
 
 cd ~/.vimplus
 ./install.sh

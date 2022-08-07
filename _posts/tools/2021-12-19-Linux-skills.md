@@ -116,7 +116,7 @@ vim ~/.ssh/authorized_keys
   export PATH=$PATH:/new/path
   ```
 
-  - 生效时间：交互式、non-login 方式进入 bash 运行时就会生效，或者手动`source ~/.bashrc`生效
+  - 生效时间：交互式、non-login 方式进入 bash 运行时就会生效，或者手动`source ~/.bashrc`生效。若是 zsh ，修改 `~/.zshrc`
   - 生效期限：永久有效
   - 生效范围：仅针对当前用户有效
 
@@ -172,7 +172,7 @@ cd ~/clash && ./clash -d .
 - Country.mmdb
 
 ```bash
-wget -O Country.mmdb [https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb](https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb)
+wget -O Country.mmdb https://cdn.jsdelivr.net/gh/Dreamacro/maxmind-geoip@release/Country.mmdb
 ```
 
 **5. 设置命令行代理**
@@ -187,7 +187,7 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 此时，已经可以正常使用，但为了精益求精，接下来需要解决两个问题：
 
 - [如何开机默认启动？](https://github.com/Dreamacro/clash/wiki/clash-as-a-daemon)
-- [如何切换代理？](https://clash.gitbook.io/doc/restful-api/proxies)默认使用的是 `config.yaml → proxies 中的第一个`
+- [如何切换代理？](https://clash.gitbook.io/doc/restful-api/proxies)默认使用的是 `config.yaml → first of proxies`
 
 **6. 开机默认启动：clash as a daemon**
 
@@ -265,13 +265,11 @@ systemctl restart clash
 如下 `/etc/clash/config.yaml`中的部分设置所示， Proxy 中记录了可选择的服务器列表：
 
 ```yaml
--
-  name: Proxy
+- name: Proxy
   type: select
   proxies:
-    - '新加坡SG'
-		- '香港HKT'
-    - '台湾TW'
+    - "台湾TW"
+    - "新加坡SG"
 ```
 
 如果我们也可以通过 API 知道 Proxy 中可选哪几个服务器，以及目前正选择的是那个服务器：

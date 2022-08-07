@@ -7,7 +7,7 @@ author: "HapppyTsing"
 catalog: false
 header-style: text
 tags:
-  - picgo
+  - Picgo
 ---
 
 # 一、Github + Picgo
