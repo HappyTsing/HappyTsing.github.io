@@ -2,7 +2,7 @@
 layout: post
 title: "Shell：()、(())、[]、[[]]、{}"
 subtitle: "The Difference Between ()、(())、[]、[[]]、{}"
-date: 2022-12-24 10:12:48
+date: 2021-12-24 10:12:48
 author: "HapppyTsing"
 catalog: false
 header-style: text

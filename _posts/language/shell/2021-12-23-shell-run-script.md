@@ -2,7 +2,7 @@
 layout: post
 title: "Shell：zsh bash source ./执行脚本的区别"
 subtitle: "The Difference Between Run Scripts By zsh bash source ./"
-date: 2022-12-23 09:27:35
+date: 2021-12-23 09:27:35
 author: "HapppyTsing"
 catalog: false
 header-style: text

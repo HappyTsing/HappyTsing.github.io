@@ -2,7 +2,7 @@
 layout: post
 title: "Shell：语法"
 subtitle: "Shell Grammer Introduction"
-date: 2022-12-21 17:45:38
+date: 2021-12-21 17:45:38
 author: "HapppyTsing"
 catalog: false
 header-style: text
