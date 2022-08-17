@@ -50,13 +50,13 @@ MAC 端推荐两个软件：
 
 复制想要播放的链接地址：`http://localhost:8080/path/to/movie.name.mkv`，进入IINA，做下图操作，点击打开即可。
 
-![image-20220817111638946](/Users/happytsing/Library/Application Support/typora-user-images/image-20220817111638946.png)
+![IINA](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/aliyundrive/image-20220817111638946.png)
 
 ### infuse
 
 如下图所示，路径表示显示哪个路径的内容，输入`/`表示根目录。
 
-![image-20220817111801306](/Users/happytsing/Library/Application Support/typora-user-images/image-20220817111801306.png)
+![infuse](https://happytsing-figure-bed.oss-cn-hangzhou.aliyuncs.com/aliyundrive/image-20220817111801306.png)
 
 # TV
 
