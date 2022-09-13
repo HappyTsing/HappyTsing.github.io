@@ -4,7 +4,7 @@ SEOTitle: 乐乐博客 | Happy Blog
 header-img: img/home-bg/1.jpg
 email: wangleqing00@qq.com
 description: "这里是乐乐的个人博客，希望与你共同进步！"
-keyword: "乐乐博客, Happy Blog, 博客, 个人网站, 互联网, Java, 后端, 区块链"
+keyword: "乐乐博客, Happy Blog, 博客, 个人网站, 互联网, Java后端, 软件分析, 区块链"
 url: "https://blog.leqing.work/" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 # Publish posts or collection documents with a future date.
@@ -72,7 +72,7 @@ ga_domain: blog.leqing.work
 
 # Sidebar settings 右侧栏设置
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "热爱生活，一切都在意料之中。"
+sidebar-about-description: "当所有人都追求快的时候，你要慢下来。"
 sidebar-avatar: /img/avatar/1.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
