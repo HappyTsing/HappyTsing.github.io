@@ -56,7 +56,7 @@
   overflow: auto;
   height: 100%;
   padding-bottom: 40px;
-  width: 195px;
+  width: 295px;
 }
 .side-catalog.fixed {
   position: fixed;
@@ -89,7 +89,7 @@
 }
 .side-catalog .catalog-body li a {
   padding-left: 10px;
-  max-width: 180px;
+  max-width: 280px;
   display: inline-block;
   vertical-align: middle;
   height: 30px;
@@ -99,29 +99,37 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.side-catalog .catalog-body .h1_nav,
-.side-catalog .catalog-body .h2_nav {
+.side-catalog .catalog-body .h1_nav {
   margin-left: 0;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* .side-catalog .catalog-body .h1_nav a {
+    color: #666060 !important;
+  } */
+.side-catalog .catalog-body .h2_nav {
+  margin-left: 25px;
+  font-size: 14px;
   font-weight: bold;
 }
 .side-catalog .catalog-body .h3_nav {
-  margin-left: 6px;
+  margin-left: 45px;
   font-size: 13px;
-  font-weight: bold;
 }
 .side-catalog .catalog-body .h4_nav {
-  margin-left: 12px;
+  margin-left: 65px;
   font-size: 12px;
 }
 .side-catalog .catalog-body .h4_nav a {
   max-width: 170px;
 }
-.side-catalog .catalog-body .h5_nav .h6_nav {
-  margin-left: 18px;
+.side-catalog .catalog-body .h5_nav,
+.h6_nav {
+  margin-left: 85px;
   font-size: 12px;
 }
-.side-catalog .catalog-body .h5_nav .h6_nav a {
+.side-catalog .catalog-body .h5_nav,
+.h6_nav a {
   max-width: 170px;
 }
 .side-catalog .catalog-body .active {
@@ -136,14 +144,11 @@
     display: none;
   }
 }
-/*
-  Please note this CSS is currently in   prototype form. We'll implement a cleaned up version in Web Starter Kit.
-*/
 .paper-snackbar {
-  transition-property: opacity, bottom, left, right, width, margin, border-radius;
+  transition-property: opacity, bottom, left, right, width, margin,
+    border-radius;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-  /*font-family: RobotoDraft;*/
   font-size: 14px;
   min-height: 14px;
   background-color: #323232;
@@ -160,16 +165,6 @@
 }
 @media (min-width: 640px) {
   .paper-snackbar {
-    /*
-    Desktop:
-      Single-line snackbar height: 48 dp tall
-      Minimum width: 288 dp
-      Maximum width: 568 dp
-      2 dp rounded corner
-      Text: Roboto Regular 14 sp
-      Action button: Roboto Medium 14 sp, all-caps text
-      Default background fill: #323232 100%
-    */
     min-width: 288px;
     max-width: 568px;
     display: inline-flex;
@@ -180,14 +175,6 @@
 }
 @media (max-width: 640px) {
   .paper-snackbar {
-    /*
-  Mobile:
-    Single-line snackbar height: 48 dp
-    Multi-line snackbar height: 80 dp
-    Text: Roboto Regular 14 sp
-    Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%  
-  */
     left: 0px;
     right: 0px;
   }
@@ -204,9 +191,6 @@
   min-width: min-content;
   outline: 0px;
 }
-/* Everything from here down is actually just for the demo - the material buttons and card, and various other pieces of styling */
-/* Variables */
-/* Buttons */
 .paper-button {
   position: relative;
   padding: 4px 0;
@@ -229,7 +213,6 @@
   display: block;
   width: 100%;
   height: 100%;
-  /*font-family: 'Roboto';*/
   font-size: 1em;
   color: #000000;
   text-transform: uppercase;
@@ -261,7 +244,6 @@
 }
 button.paper-button {
   border: 0;
-  /*font-family: RobotoDraft, 'Helvetica Neue', Helvetica, Arial;*/
   font-size: 1em;
   line-height: 25px;
   background-color: #ffffff;
@@ -272,7 +254,6 @@ button.paper-button {
 .paper-button.colored.raised-button input[type="submit"] {
   color: #ffffff;
 }
-/** Shadows **/
 .paper-shadow-animated.paper-shadow {
   transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -297,7 +278,6 @@ button.paper-button {
 .paper-shadow-top-z-4 {
   box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21);
 }
-/** Card **/
 .card {
   background: white;
   width: 300px;
@@ -554,7 +534,6 @@ pre.highlight {
   text-align: right;
   border-radius: 0px;
 }
-/* Landscape phones and down */
 @media (max-width: 480px) {
   .highlighter-rouge .highlight {
     margin-left: -15px;
@@ -652,11 +631,11 @@ pre.highlight {
   font-size: 16px;
 }
 body {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 16px;
   color: #404040;
@@ -666,11 +645,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 p {
-  margin: 30px 0;
+  margin: 0.5rem 0;
 }
 @media screen and (max-width: 768px) {
   p {
-    margin: 25px 0;
+    margin: 0.3rem 0;
   }
 }
 h1,
@@ -679,11 +658,11 @@ h3,
 h4,
 h5,
 h6 {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   line-height: 1.1;
   font-weight: bold;
@@ -707,9 +686,11 @@ article {
 }
 blockquote {
   color: gray;
-  font-style: italic;
+  font-style: normal;
   font-size: 0.95em;
   margin: 20px 0 20px;
+  border-left: 5px solid #6bd6fd;
+  background: #e1f7ff;
 }
 blockquote p {
   margin: 0;
@@ -900,29 +881,18 @@ samp {
   text-decoration: none !important;
 }
 @media only screen and (max-width: 767px) {
-  /**
-   * Layout
-   * Since V1.6 we use absolute positioning to prevent to expand container-fluid
-   * which would cover tags. A absolute positioning make a new layer.
-   */
   .navbar-default .navbar-collapse {
     position: absolute;
     right: 0;
     border: none;
     background: white;
     box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
-    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.239216) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px,
+      rgba(0, 0, 0, 0.239216) 0px 1px 4px;
     border-radius: 2px;
     width: 170px;
   }
-  /**
-   * Animation
-   * HuxBlog-Navbar using genuine Material Design Animation
-   */
   #huxblog_navbar {
-    /**
-     * Sharable code and 'out' function
-     */
     opacity: 0;
     transform: scaleX(0);
     transform-origin: top right;
@@ -930,9 +900,6 @@ samp {
     -webkit-transform: scaleX(0);
     -webkit-transform-origin: top right;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.4, 0.99) 0ms;
-    /**
-     *'In' Animation
-     */
   }
   #huxblog_navbar a {
     font-size: 13px;
@@ -945,7 +912,8 @@ samp {
     transition: transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
     -webkit-transform: scaleY(0);
     -webkit-transform-origin: top right;
-    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.32, 1, 0.23, 1)
+      0ms;
   }
   #huxblog_navbar li {
     opacity: 0;
@@ -979,11 +947,11 @@ samp {
   left: 0;
   width: 100%;
   z-index: 3;
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
 .navbar-custom .navbar-brand {
@@ -1059,7 +1027,6 @@ samp {
     -webkit-transition: background-color 0.3s;
     -moz-transition: background-color 0.3s;
     transition: background-color 0.3s;
-    /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -1069,7 +1036,6 @@ samp {
     backface-visibility: hidden;
   }
   .navbar-custom.is-fixed {
-    /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -1093,7 +1059,6 @@ samp {
     color: #0085a1;
   }
   .navbar-custom.is-visible {
-    /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     -moz-transform: translate3d(0, 100%, 0);
     -ms-transform: translate3d(0, 100%, 0);
@@ -1110,7 +1075,6 @@ samp {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 0px;
-  /* 0 on mobile, modify by Hux */
 }
 .intro-header.style-text {
   background: none;
@@ -1140,7 +1104,6 @@ samp {
 @media only screen and (min-width: 768px) {
   .intro-header {
     margin-bottom: 20px;
-    /* response on desktop */
   }
 }
 .intro-header .site-heading,
@@ -1175,11 +1138,11 @@ samp {
 }
 .intro-header .site-heading .subheading,
 .intro-header .page-heading .subheading {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 18px;
   line-height: 1.1;
@@ -1203,11 +1166,11 @@ samp {
   display: block;
 }
 .intro-header .post-heading .subheading {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   font-size: 17px;
   line-height: 1.4;
@@ -1216,7 +1179,7 @@ samp {
   margin-top: -5px;
 }
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "Lora", "Times New Roman", serif;
   font-style: italic;
   font-weight: 300;
   font-size: 16px;
@@ -1276,7 +1239,7 @@ samp {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "Lora", "Times New Roman", serif;
   color: #a3a3a3;
   font-size: 16px;
   font-style: italic;
@@ -1293,7 +1256,7 @@ samp {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 26px;
+    font-size: 25px;
     line-height: 1.3;
     margin-bottom: 10px;
   }
@@ -1306,7 +1269,7 @@ samp {
 }
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
+  font-style: normal;
   color: #a3a3a3;
 }
 .post-content-preview:hover {
@@ -1353,11 +1316,11 @@ footer .copyright a:focus {
   color: #0085a1;
 }
 .btn {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 14px;
@@ -1382,11 +1345,11 @@ footer .copyright a:focus {
 }
 .pager li > a,
 .pager li > span {
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
   text-transform: uppercase;
   font-size: 13px;
@@ -1442,7 +1405,6 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
-/* Hux add tags support */
 .d-none {
   display: none !important;
 }
@@ -1520,7 +1482,8 @@ img::-moz-selection {
 }
 #tag_cloud a.focus,
 #tag_cloud .tag.focus {
-  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.239216) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px,
+    rgba(0, 0, 0, 0.239216) 0 1px 4px;
 }
 #tag_cloud a.tag-button--all,
 #tag_cloud .tag.tag-button--all {
@@ -1569,11 +1532,11 @@ img::-moz-selection {
 }
 .mini-post-list .tag-text {
   font-weight: 200;
-  /* Hux learn from
-     *     TypeIsBeautiful,
-     *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-     */
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial",
+    "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei",
+    "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC",
+    "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC",
+    "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
   line-height: 1.7;
 }
 .mini-post-list .post-preview {
@@ -1610,15 +1573,12 @@ img::-moz-selection {
     font-size: 18px;
   }
 }
-/* Tags support End*/
-/* Hux make all img responsible in post-container */
 .post-container img {
   display: block;
   max-width: 100%;
   height: auto;
   margin: 1.5em auto 1.6em auto;
 }
-/* Hux Optimize UserExperience */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover {
   background-color: inherit;
@@ -1626,7 +1586,6 @@ img::-moz-selection {
 .navbar-default .navbar-toggle:active {
   background-color: rgba(255, 255, 255, 0.25);
 }
-/* Hux customize Style for navBar button */
 .navbar-default .navbar-toggle {
   border-color: transparent;
   padding: 19px 16px;

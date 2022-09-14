@@ -72,8 +72,8 @@ ga_domain: blog.leqing.work
 
 # Sidebar settings 右侧栏设置
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "当所有人都追求快的时候，你要慢下来。"
-sidebar-avatar: /img/avatar/1.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "世界很快，但你要慢下来"
+sidebar-avatar: /img/avatar/2.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags

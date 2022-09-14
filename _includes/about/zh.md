@@ -1,4 +1,4 @@
-你好，我是乐乐，欢迎在此留言与我交流！
+> 君子不隐其短，不知则问，不能则学。
 
 # 一、已完成迁移
 
@@ -16,7 +16,7 @@
 
 - 常用软件配置：vscode、JetBrain、picgo 等
 
-# 二、后续更新计划（todo！！！）
+# 二、后续更新计划
 
 ## 2.1 Notion -> Pages
 
@@ -32,14 +32,16 @@
 
 # 后续学习计划（2022）：
 
-- 编译原理（to finish）
+- 编译原理 done
 
-- CSAPP：[CMU](https://www.bilibili.com/video/BV1iW411d7hd?spm_id_from=333.999.0.0)
+- CSAPP：[CMU](https://www.bilibili.com/video/BV1iW411d7hd?spm_id_from=333.999.0.0) to continue
 
-- 软件分析：[南京大学](https://www.bilibili.com/medialist/play/2919428?from=space&business=space_series&business_id=1006553&desc=0&spm_id_from=333.999.0.0)
+- 软件分析：[南京大学](https://www.bilibili.com/medialist/play/2919428?from=space&business=space_series&business_id=1006553&desc=0&spm_id_from=333.999.0.0) almost done
 
-- fuzzing（重点！）
+- fuzzing important
 
 - Latex、正则（写一下笔记）
 
-- 软件测试？
+- 区块链相关 new add
+
+- 软件测试 yes
