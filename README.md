@@ -8,4 +8,6 @@ fork from @[Github Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
 - catalog h1-h6 indent distance
 
-- css for blockquote
+- css e.g. blockquote
+
+- background picture
