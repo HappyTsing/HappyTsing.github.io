@@ -2,9 +2,12 @@
 
 fork from @[Github Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
-[Build Blog With Github Page And Jekyll - old version](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
+built like [Build Blog With Github Page And Jekyll - old version](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
 
-css idea inspired by [haru](https://github.com/LSTM-Kirigaya/typora-haru-theme)
+css idea inspired by follows:
+
+- [haru](https://github.com/LSTM-Kirigaya/typora-haru-theme)：fancy typora theme
+- [xidoo.top](https://xidoo.top/)：beautiful web site for coder
 
 # Modify
 
@@ -21,8 +24,6 @@ css idea inspired by [haru](https://github.com/LSTM-Kirigaya/typora-haru-theme)
   - `> ###` References
   - `> ####` Warning
   - `> #####` Important
-
-- background images
 
 # Example Demo
 

@@ -694,9 +694,10 @@ article {
 .post-container > h4,
 .post-container > h5,
 .post-container > h6 {
+  font-weight: 800;
+  line-height: 1.5;
   margin-top: 50px;
   margin-bottom: 20px;
-  line-height: 1.4;
 }
 .post-container > blockquote > h1,
 .post-container > blockquote > h2,
