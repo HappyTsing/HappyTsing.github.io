@@ -57,7 +57,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: leqing-work
+disqus_username: happytsing
 
 # Netease settings
 netease_comment: false
@@ -67,7 +67,7 @@ netease_comment: false
 ba_track_id: 0ef6a02a593e0bcddc16f48386c9d8a5
 
 # Google Analytics
-ga_track_id: "G-VNST1JHHGZ" # Format: UA-xxxxxx-xx
+ga_track_id: "G-JDXN8V33QR" # Format: UA-xxxxxx-xx
 ga_domain: blog.leqing.work
 
 # Sidebar settings 右侧栏设置

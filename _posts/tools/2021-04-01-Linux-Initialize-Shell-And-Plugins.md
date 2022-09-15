@@ -27,7 +27,7 @@ echo $SHELL # 查看修改后的使用shell
 
 # 二、oh-my-zsh
 
-安装 oh-my-zsh 及其插件：
+安装 oh-my-zsh 及其插件
 
 ```shell
 # 安装oh-my-zsh
@@ -43,13 +43,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 git clone https://gitee.com/forkhub-tsing/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-安装主题 powerlevel10k
-
-```shell
-# 安装字体：https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-```
-
 启动插件：
 
 ```shell
@@ -59,19 +52,44 @@ plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)
 # sudo是ohmyzsh自带的插件，功能是在你输入的命令的开头添加sudo ，方法是双击Esc
 # extract也是自带插件，不用再去记不同文件的解压命令，方法是extract +你要解压的文件名
 
-## 找到ZSH_THEME，修改为：
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # 绑定~为接受建议，在文件末尾添加如下内容：
 bindkey '`' autosuggest-accept
 ```
 
-使用如下脚本快速完成设置：
+安装主题(二选一)
+
+- powerlevel10k
+- pure
+
+**1. Powerlevel10k**
 
 ```shell
+# 安装字体：https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# vim ~/.zshrc 找到ZSH_THEME，修改为：ZSH_THEME="powerlevel10k/powerlevel10k", 快速配置：
 sed -i '/ZSH_THEME="/ c ZSH_THEME="powerlevel10k/powerlevel10k"' ~/.zshrc
-sed -i '/plugins=(git)/ c plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)' ~/.zshrc
-sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc
+```
+
+**2. pure**
+
+```sh
+git clone https://gitee.com/forkhub-tsing/pure.git "$HOME/.zsh/pure"
+
+# 参见 https://github.com/sindresorhus/pure#install，快速配置：
+
+# 删除p10k及pure的旧配置
+sed -i '/fpath.*pure/d' ~/.zshrc
+sed -i '/autoload.*promptinit/d' ~/.zshrc
+sed -i '/prompt pure/d' ~/.zshrc
+
+# Set ZSH_THEME="" in your .zshrc to disable oh-my-zsh themes.
+sed -i '/ZSH_THEME="/ c ZSH_THEME=""' ~/.zshrc
+
+# 新增配置
+echo 'fpath+=($HOME/.zsh/pure)' >> ~/.zshrc
+echo 'autoload -U promptinit; promptinit' >> ~/.zshrc
+echo 'prompt pure' >> ~/.zshrc
 ```
 
 保存配置：
@@ -80,7 +98,7 @@ sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc
 source ~/.zshrc
 ```
 
-重启 shell，此时会进入主题设置，按引导进行即可，如果设置后不满意：
+重启 shell，若选择了p10k主题，此时会进入主题设置，按引导进行即可，如果设置后不满意：
 
 ```shell
 # 重新配置主题
