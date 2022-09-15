@@ -179,7 +179,7 @@
         }
 
         // init
-        var P = $(_containerSelector), a, n, t, l, i, c;
+        var P = $(_containerSelector), a, n, t, l, i, c,parent_tag;
         a = P.find('h1,h2,h3,h4,h5,h6');
 
         // clean
@@ -188,11 +188,14 @@
         // appending
         a.each(function () {
             n = $(this).prop('tagName').toLowerCase();
-            i = "#" + $(this).prop('id');
-            t = $(this).text();
-            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
-            l = $('<li class="' + n + '_nav"></li>').append(c);
-            $(selector).append(l);
+            parent_tag = this["parentElement"]["tagName"].toLowerCase();
+            if(parent_tag != 'blockquote'){
+                i = "#" + $(this).prop('id');
+                t = $(this).text();
+                c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+                l = $('<li class="' + n + '_nav"></li>').append(c);
+                $(selector).append(l);
+            }
         });
         return true;
     }
