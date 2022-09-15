@@ -1,8 +1,8 @@
 # [Happy Blog](https://blog.leqing.work/)
 
-fork from @[Github Hux Blog](https://github.com/Huxpro/huxpro.github.io)
+fork from [@Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
-built like [Build Blog With Github Page And Jekyll - old version](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
+build like [Build Blog With Github Page And Jekyll - old version](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
 
 css idea inspired by follows:
 
