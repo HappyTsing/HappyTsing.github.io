@@ -2,12 +2,30 @@
 
 fork from @[Github Hux Blog](https://github.com/Huxpro/huxpro.github.io)
 
-[手把手教你使用 Github Page + Jekyll 搭建博客！](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
+[Build Blog With Github Page And Jekyll - old version](https://blog.leqing.work/2021/09/14/Build-Blog-With-Github-Page-And-Jekyll/)
+
+css idea inspired by [haru](https://github.com/LSTM-Kirigaya/typora-haru-theme)
 
 # Modify
 
-- catalog h1-h6 indent distance
+- increase catalog h1-h6 indent distance
 
-- css e.g. blockquote
+- change css e.g. table
 
-- background picture
+- add css for checkout、h1-h3 ::before
+
+- extend blockquote by `> #*n`
+
+  - `> #` Tips
+  - `> ##` Question
+  - `> ###` References
+  - `> ####` Warning
+  - `> #####` Important
+
+- background images
+
+# Example Demo
+
+[click to live demo](http://localhost:4000/2022/09/16/example-demo/)
+
+![demo](./img/other/demo.png)

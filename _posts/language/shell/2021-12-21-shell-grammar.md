@@ -149,13 +149,13 @@ then
     ...
     commandN
 elif [ condition ]
-		command1
-		...
-		commandN
+	command1
+	...
+	commandN
 else
-		command1
-		...
-		commandN
+	command1
+	...
+	commandN
 fi
 
 # 写成一行（适用于终端命令提示符）：
@@ -169,21 +169,21 @@ if [ $(ps -ef | grep -c "ssh") -gt 1 ]; then echo "true"; fi
 
 ```bash
 case ${value} in
-	"value1")
-			command1
-			...
-			commandN
-			;;
-	"value2")
-			command1
-			...
-			commandN
-			;;
-	*)
-			command1
-			...
-			commandN
-			;;
+"value1")
+	command1
+	...
+	commandN
+	;;
+"value2")
+	command1
+	...
+	commandN
+	;;
+*)
+	command1
+	...
+	commandN
+	;;
 esac
 ```
 
@@ -197,9 +197,9 @@ esac
 # 形式1
 for var in value1 ... valueN
 do
-		command1
-		...
-		commandN
+	command1
+	...
+	commandN
 done
 
 # 形式2
@@ -219,7 +219,7 @@ for var in value1 ... valueN; do command1;commandN done
 ```bash
 while [ condition ]
 do
-  command1
+	command1
 	...
 	commandN
 done
@@ -232,7 +232,7 @@ done
 ```bash
 until [ condition ]
 do
-  command1
+	command1
 	...
 	commandN
 done
@@ -255,8 +255,8 @@ shell 中函数的定义格式如下：
 
 ```bash
 function func_name(){
-		# statements
-		return int
+	# statements
+	return int
 }
 ```
 
@@ -380,13 +380,13 @@ fi
 - test
 - cat
 
-# Reference
-
-- [博客园 | 一文掌握 shell 语言](https://www.cnblogs.com/jingmoxukong/p/7867397.html)
-- [C 语言中文网 | Shell 教程](http://c.biancheng.net/cpp/view/6994.html)
-- [廖雪峰 | Bash 脚本教程](https://wangdoc.com/bash/expansion.html#%E7%AE%80%E4%BB%8B)
-- [bash-handbook-zh-CN](https://github.com/denysdovhan/bash-handbook/blob/master/translations/zh-CN/README.md#%E5%A4%A7%E6%8B%AC%E5%8F%B7%E6%89%A9%E5%B1%95)
-- [Linux Tools Quick Tutorial](https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html#)
-- [Shell：运算符](https://blog.leqing.work/2022/12/22/shell-operator/)
-- [Shell：zsh bash source ./执行脚本的区别](https://blog.leqing.work/2022/12/22/shell-run-script/)
-- [Shell：单中括号和双中括号的区别](https://blog.leqing.work/2022/12/23/shell-difference-bracket/)
+> ### References
+>
+> - [一文掌握 shell 语言 - 博客园](https://www.cnblogs.com/jingmoxukong/p/7867397.html)
+> - [Shell 教程 - C 语言中文网](http://c.biancheng.net/cpp/view/6994.html)
+> - [Bash 脚本教程 - 廖雪峰](https://wangdoc.com/bash/expansion.html#%E7%AE%80%E4%BB%8B)
+> - [bash-handbook-zh-CN](https://github.com/denysdovhan/bash-handbook/blob/master/translations/zh-CN/README.md#%E5%A4%A7%E6%8B%AC%E5%8F%B7%E6%89%A9%E5%B1%95)
+> - [Linux Tools Quick Tutorial](https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html#)
+> - [Shell：运算符](https://blog.leqing.work/2022/12/22/shell-operator/)
+> - [Shell：zsh bash source ./执行脚本的区别](https://blog.leqing.work/2022/12/22/shell-run-script/)
+> - [Shell：单中括号和双中括号的区别](https://blog.leqing.work/2022/12/23/shell-difference-bracket/)

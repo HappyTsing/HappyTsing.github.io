@@ -168,10 +168,10 @@ vim
 - .zshrc 中配置了 plugins=(sudo)后，连续按两下 esc 键即在命令前加上 sudo
 - fuck，安装了 thefuck 后输入即可纠正错误
 
-# 六、Reference
-
-- [Github powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
-- [iterm2 和 zsh 终端体验优化](https://bytedance.feishu.cn/docs/doccn6xXJnUTedx2roBjKAMX2Gf#)
-- [程序员内功系列-iTerm2 与 Zsh 篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
-- [程序员内功系列-常用命令行工具推荐](https://xiaozhou.net/learn-the-command-line-tools-md-2018-10-11.html)
-- [oh my zsh 插件推荐](https://hufangyun.com/2017/zsh-plugin/)
+> ### Reference
+>
+> - [Github powerlevel10k](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k)
+> - [iterm2 和 zsh 终端体验优化](https://bytedance.feishu.cn/docs/doccn6xXJnUTedx2roBjKAMX2Gf#)
+> - [程序员内功系列-iTerm2 与 Zsh 篇](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
+> - [程序员内功系列-常用命令行工具推荐](https://xiaozhou.net/learn-the-command-line-tools-md-2018-10-11.html)
+> - [oh my zsh 插件推荐](https://hufangyun.com/2017/zsh-plugin/)

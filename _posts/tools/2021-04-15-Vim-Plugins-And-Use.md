@@ -151,7 +151,7 @@ vim 自带教程，命令行输入：vimtutor
 - `CTRL-D`，输入:e 后，按 CTRL-D，会显示所有 e 开始的命令
 - `tab`，只能补全命令
 
-# 三、References
-
-- [Vim 练级攻略](https://coolshell.cn/articles/5426.html)
-- [Github Vimplus](https://github.com/chxuan/vimplus)
+> ### References
+>
+> - [Vim 练级攻略](https://coolshell.cn/articles/5426.html)
+> - [Github Vimplus](https://github.com/chxuan/vimplus)

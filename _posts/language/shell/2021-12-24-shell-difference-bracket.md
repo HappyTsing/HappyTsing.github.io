@@ -172,7 +172,7 @@ $ source test.sh
 915416
 ```
 
-# Reference
-
-- [What is the difference between double and single square brackets in bash?](https://serverfault.com/questions/52034/what-is-the-difference-between-double-and-single-square-brackets-in-bash)
-- [shell 中各种括号的作用](https://www.runoob.com/w3cnote/linux-shell-brackets-features.html)
+> ### References
+>
+> - [What is the difference between double and single square brackets in bash?](https://serverfault.com/questions/52034/what-is-the-difference-between-double-and-single-square-brackets-in-bash)
+> - [shell 中各种括号的作用](https://www.runoob.com/w3cnote/linux-shell-brackets-features.html)

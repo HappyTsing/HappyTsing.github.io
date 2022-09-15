@@ -334,8 +334,8 @@ subtitle:     "Upgrading Ele.me to Progressive Web App"
 
 新增一个分页：
 
-# 五、References
-
-- [Github Hux Blog](https://github.com/WlqFigureBed/huxpro.github.io)
-- [Jekyll Docs](http://jekyllcn.com/docs/installation/)
-- [Github Page Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
+> ### References
+>
+> - [Github Hux Blog](https://github.com/WlqFigureBed/huxpro.github.io)
+> - [Jekyll Docs](http://jekyllcn.com/docs/installation/)
+> - [Github Page Docs](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages)
