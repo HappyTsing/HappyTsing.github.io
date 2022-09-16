@@ -119,7 +119,8 @@
 
 {% if site.ga_track_id %}
 
-<script async src="https://www.googletagmanager.com/gtag/js?id="+site.ga_track_id></script>
+<script async src='{{"https://www.googletagmanager.com/gtag/js?id=" | append: site.ga_track_id }}'></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id="+site.ga_track_id></script> -->
 <script>
     var _gaId = '{{ site.ga_track_id }}';
 
