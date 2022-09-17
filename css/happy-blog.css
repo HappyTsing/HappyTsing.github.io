@@ -709,11 +709,11 @@ article {
 /* inline-code */
 code {
   margin: 0 2px;
-  padding: 4px 6px;
+  padding: 1px 5px;
   color: #666363;
   white-space: pre-wrap;
   background: var(--light-color);
-  border-radius: 8px;
+  border-radius: 7px;
 }
 
 blockquote code {
