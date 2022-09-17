@@ -12,13 +12,19 @@ tags:
 
 # h1
 
-> # You can use `>` + `#` to create Tips block
+> # Tips
+>
+> You can use `>` + `#` to create `Tips` block
+>
+> Note that content after `> #^n` will be hidden and not selected.
 >
 > Write tips here.
 
 ## h2
 
-> ## `>` + `##` = Question
+> ## Question
+>
+> `>` + `##` = `Question`
 >
 > Here is your Question？
 
@@ -26,9 +32,7 @@ tags:
 
 > ### References
 >
-> `>` + `###` = References
->
-> Note that content after `> ###` will be hidden and not selected.
+> `>` + `###` = `References`
 >
 > - [typora-haru-theme](https://github.com/LSTM-Kirigaya/typora-haru-theme)
 > - [huxpro](https://github.com/Huxpro/huxpro.github.io)
@@ -36,13 +40,25 @@ tags:
 
 #### h4
 
-> #### `>` + `####` = Warning
+> #### Example
 >
-> Write warning here.
+> `>` + `####` = `Example`
+>
+> For example...
 
 ##### h5
 
-> ##### `>` + `#####` = Important
+> ##### Warning
+>
+> `>` + `#####` = `Warning`
+>
+> Write warning here.
+
+###### h6
+
+> ###### Important
+>
+> `>` + `######` = `Important`
 >
 > Write something Important here.
 
@@ -58,15 +74,16 @@ class HelloWorld {
 
 # Table
 
-| trigger code  | result     |
-| ------------- | ---------- |
-| `>` + `#`     | Tips       |
-| `>` + `##`    | Question   |
-| `>` + `###`   | References |
-| `>` + `####`  | Warning    |
-| `>` + `#####` | Important  |
+| trigger        | result     |
+| -------------- | ---------- |
+| `>` + `#`      | Tips       |
+| `>` + `##`     | Question   |
+| `>` + `###`    | References |
+| `>` + `####`   | Example    |
+| `>` + `#####`  | Warning    |
+| `>` + `######` | Important  |
 
-# Checkout List
+# Checkout
 
 - [x] Finished
 - [ ] Todo

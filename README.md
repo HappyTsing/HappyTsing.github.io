@@ -9,24 +9,29 @@ css idea inspired by follows:
 - [haru](https://github.com/LSTM-Kirigaya/typora-haru-theme)：fancy typora theme
 - [xidoo.top](https://xidoo.top/)：beautiful web site for coder
 
-# Modify
+# Update Log
 
-- increase catalog h1-h6 indent distance
+- Fix error when `h` in `blockquote` and `list`
 
-- change css e.g. table
+- update code for google analytics
 
-- add css for checkout、h1-h3 ::before
+- Optimize the CSS structure
 
-- extend blockquote by `> #*n`
+- expand catalog click scope and change `h` indent distance
 
-  - `> #` Tips
-  - `> ##` Question
-  - `> ###` References
-  - `> ####` Warning
-  - `> #####` Important
+- Add the `table`, `checkout` and `h::before` style
+
+- Enhance blockquote by `> #^n`, details:
+
+| trigger        | result     |
+| -------------- | ---------- |
+| `>` + `#`      | Tips       |
+| `>` + `##`     | Question   |
+| `>` + `###`    | References |
+| `>` + `####`   | Example    |
+| `>` + `#####`  | Warning    |
+| `>` + `######` | Important  |
 
 # Example Demo
 
-[click to live demo](http://localhost:4000/2022/09/16/example-demo/)
-
-![demo](./img/other/demo.png)
+[click to live demo](https://blog.leqing.work/2022/09/15/example-demo/)
