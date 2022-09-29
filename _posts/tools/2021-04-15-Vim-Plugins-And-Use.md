@@ -12,57 +12,9 @@ tags:
 
 # 一、Install Vimplus
 
-❤ 为了确保不被拒绝连接，设置 hosts 文件：
-
-```shell
-sudo nano /etc/hosts
-## 将下面的内容添加上去：
-# GitHub Start
-151.101.64.133 raw.githubusercontent.com
-# GitHub End
-```
-
-安装 vim：
-
-```shell
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt install vim
-```
-
-安装 Vimplus——开箱即用的 vim 插件管理工具：
-
-```shell
-git clone https://github.com/chxuan/vimplus.git ~/.vimplus
-cd ~/.vimplus
-./install.sh
-```
-
-查看 vim 插件：
-
-```shell
-vim ~/.vimrc
-# 可以看到如下内容，两个call中间的内容就是我们的插件
-call plug#begin()
-Plug 'preservim/NERDTree'
-call plug#end()
-```
-
-该 vimplus 插件默认安装了若干插件，如果安装失败：
-
-```shell
-# 进入vim文本编辑器
-vim
-
-# 安装所有插件
-:PlugInstall
-
-# 更新插件
-:PlugUpdate
-
-# 如果你不想更新所有的插件，你可以通过添加插件的名字来更新任何插件:
-:PlugUpdate NERDTree
-```
+> ### Reference
+>
+> [Linux Iniialize](https://blog.leqing.work/2021/04/01/Linux-Initialize-Shell-And-Plugins/)
 
 # 二、Use Vim
 

@@ -54,6 +54,12 @@ plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)
 
 # 绑定~为接受建议，在文件末尾添加如下内容：
 bindkey '`' autosuggest-accept
+
+# 使用如下shell代码一键配置
+sed -i '/plugins=(git)/ c plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions sudo extract)' ~/.zshrc
+if [ ! `grep -c "bindkey .* autosuggest-accept" $HOME/.zshrc` -ne "0" ];then
+    sed -i '$a bindkey '"'"'`'"'"' autosuggest-accept' ~/.zshrc
+fi
 ```
 
 安装主题(二选一)
@@ -98,7 +104,7 @@ echo 'prompt pure' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-重启 shell，若选择了p10k主题，此时会进入主题设置，按引导进行即可，如果设置后不满意：
+重启 shell，若选择了 p10k 主题，此时会进入主题设置，按引导进行即可，如果设置后不满意：
 
 ```shell
 # 重新配置主题
