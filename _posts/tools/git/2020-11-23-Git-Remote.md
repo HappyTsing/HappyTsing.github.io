@@ -66,8 +66,8 @@ git push origin localbranch:remotebranch
 # 推送指定分支 localbranch 到远程仓库的 remotebranch 分支,如果remotebranch不存在，则创建
 
 
-git push origin :remotebranch  # 推送“空分支”到远程仓库的 remotebranch 分支,即删除远程仓库中的分支 remotebranch
-git push --delete remotebranch # 删除远程分支，效果同上
+git push origin :remote_branch  # 推送“空分支”到远程仓库的 remotebranch 分支,即删除远程仓库中的分支 remotebranch
+git push --delete remote_branch # 删除远程分支，效果同上
 
 git push origin --tag          # 推送所有tag
 git push origin --all          # 推送所有分支和tag
@@ -102,6 +102,7 @@ git push origin --all          # 推送所有分支和tag
 ```shell
 git pull origin                # 拉取远程仓库 origin，如果有多个远程仓库时，需要显式的指定要拉取的远程仓库是比较安全的
 git pull origin <branch name>  # 拉取远程仓库 origin 的指定分支
+git pull origin <remote_branch>:<local_branch>  # 拉取远程仓库 origin 的分支到指定的本地分支上
 ```
 
 **zsh shortcut**：`gl`
