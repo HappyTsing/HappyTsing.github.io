@@ -35,7 +35,15 @@ dmidecode -t memory
 
 # 查看内存使用情况
 free -g
+htop
+top
+
+# 查看进程
+
+ps -ef | grep <xxx>
 ```
+
+---
 
 wget：下载文件
 
@@ -50,19 +58,61 @@ wget -c http://https://github.com/xxx/example/v1.whl
 
 tar：解压
 
-| 参数 | 解释                                                                               |
-| ---- | ---------------------------------------------------------------------------------- |
-| z    | 通过 gzip 支持的压缩或解压缩。还有其他的压缩或解压缩方式，比如 j 表示 bzip2 的方式 |
-| x    | 解压缩                                                                             |
-| v    | 在压缩或解压缩过程中显示正在处理的文件名                                           |
-| f    | f 后面必须跟上要处理的文件名。                                                     |
+| 参数 | 解释 |
+| --- | --- |
+| z | 通过 gzip 支持的压缩或解压缩。还有其他的压缩或解压缩方式，比如 j 表示 bzip2 的方式 |
+| x | 解压缩 |
+| v | 在压缩或解压缩过程中显示正在处理的文件名 |
+| f | f 后面必须跟上要处理的文件名 |
+
+---
 
 ssh：远程连接
 
 ```bash
-ssh user@ip
+ssh -p <port> user@ip
 # ssh root@47.108.147.2
 ```
+
+ssh 可以通过 `ProxyCommand` 和 `ProxyJump` 来实现通过跳板机远程连接，二者不可同时配置，`ProxyCommand` 是更古老的协议，推荐使用更安全的 `ProxyJump`。
+
+通过配置 `~/.ssh/config` 或者 `/etc/ssh/ssh_config` 来实现跳板机，首先介绍 `ProxyCommand` 的方法：
+
+```
+Host jumpbox
+  HostName 192.168.1.112
+  User wangleqing
+
+Host target_server
+  HostName 192.168.2.157
+  User happytsing
+  Port 22
+  ProxyCommand ssh -W %h:%p jumpbox
+```
+
+`%h` 和 `%s` 用于动态的获取 `HostName` 和 `Port`，当然也可以写死。`-W` 是为了实现 nc 命令建立连接。
+
+更推荐采用 `ProxyJump` 的方式进行跳转：
+
+- `ssh -J jumpbox@host:port target@host -p port` 注意可以无限嵌套
+- 通过配置文件：
+  ```
+  Host jumpbox
+    HostName 192.168.1.112
+    User wangleqing
+
+  Host target_server
+    HostName 192.168.2.157
+    User happytsing
+    Port 22
+    ProxyJump jumpbox
+  ```
+
+配置完毕后，通过 `ssh target_server` 即可直接通过跳板机登录。
+
+此外，可以通过 `-v` 参数打印调试信息
+
+---
 
 scp：上传/下载文件
 

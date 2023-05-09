@@ -23,14 +23,14 @@ git branch     # 显示所有本地分支。
 **Params：**
 
 | 参数           | 效果                                                                                                                                                               |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| --- | --- |
 | -r             | **显示所有远程分支**。因为分布式的关系，这里的远程分支，其实是本地仓库中对应远程仓库分支的本地映射，并不是指实际服务器上的分支，是通过 pull 或者 push 等来同步的。 |
-| -a             | **显示所有本地分支和远程分支**。                                                                                                                                   |
+| -a             | **显示所有本地分支和远程分支**。                      |
 | -q/--no-merged | 显示已合并/未合并到当前分支的分支。                                                                                                                                |
 | -d             | **删除分支**，会检查是否已合并，如果未合并则会提示：“还未合并，无法删除”，`-D` 则会强制删除。                                                                      |
 | -m             | **分支重命名**，会检查新分支名是否存在，`-M`·强制重命名。                                                                                                          |
 | --track/-t     | 跟踪远程分支，与远程分支的流关联，可以 pull 或者 push。例如：git branch --track foo origin/foo，跟踪远程分支 foo。                                                 |
-| -vv            | **查看本地分支和远程分支的关联关系**                                                                                                                               |
+| -vv            | **查看本地分支和远程分支的关联关系**                |
 
 **zsh shortcut**：`gb`
 
@@ -41,14 +41,14 @@ git branch     # 显示所有本地分支。
 - 文件
 - 分支
 
-| 命令                                    | 效果                                                                                                                                                |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| git checkout old-branch                 | 切换到已经存在的分支。                                                                                                                              |
-| git checkout -b new-branch              | 从当前分支检出新分支 new-branch。                                                                                                                   |
-| git checkout -b new-branch [commit/tag] | 从某个 commit 或者 tag，分支检出新分支 new-branch。                                                                                                 |
-| git checkout -t origin/test-branch      | 跟踪远程分支 test-branch.                                                                                                                           |
+| 命令 | 效果 |
+| --- | ---|
+| git checkout old-branch | 切换到已经存在的分支 |
+| git checkout -b new-branch | 从当前分支检出新分支 new-branch |
+| git checkout -b new-branch [commit/tag] | 从某个 commit 或者 tag，分支检出新分支 new-branch |
+| git checkout -t origin/test-branch      | 跟踪远程分支 test-branch |
 | git checkout file1                      | 检出文件 file1 在 HEAD 的状态，检出的默认是暂存区，即如果暂存区有 file1，检出的是暂存区的状态。git checkout HEAD file1 则可以检出 HEAD 的文件状态。 |
-| git checkout -- file1                   | 检出文件在 HEAD（暂存区有则是暂存区）的状态，即丢弃工作区的修改。                                                                                   |
+| git checkout -- file1  | 检出文件在 HEAD（暂存区有则是暂存区）的状态，即丢弃工作区的修改 |
 
 **zsh shortcut**：
 
